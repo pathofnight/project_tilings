@@ -296,9 +296,7 @@ Press space to continue""" % self.score)
 			pygame.display.update()
 			
 			for event in pygame.event.get():
-				if event.type == pygame.USEREVENT+1:
-					self.drop(False)
-				elif event.type == pygame.QUIT:
+				if event.type == pygame.QUIT:
 					self.quit()
 				elif event.type == pygame.KEYDOWN:
 					for key in key_actions:
